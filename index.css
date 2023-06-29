@@ -1,0 +1,85 @@
+.click_here{
+    padding: 10px 20px;
+    color: #fff;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    background: linear-gradient(to right, #bf6708 50%, rgb(34, 77, 195) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.click_here:hover{
+    
+    background-position: left bottom;
+    transition: all 1s linear;
+    
+}
+
+.pop_up{
+    width: 30%;
+    margin: auto;
+    height: 30vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-300%);
+    background: linear-gradient(68deg, rgba(88,34,195,1) 24%, rgba(253,45,45,1) 77%);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    transition: all 1s linear;
+    border-radius: 5px;
+}
+.buttons{
+    color: #fff;
+    display: flex;
+    justify-content: end;  
+    padding-bottom: 2px;          
+}
+.buttons > a{
+    padding: 0.2rem 0.3rem;;
+    margin-right: 5px;
+    background-color: burlywood;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.cross{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: crimson;
+    border-radius: 100%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cross img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.pop_active{
+    transform: translate(-50%,-50%);
+}
+@media only screen and (max-width:900px){
+    .pop_up {
+        width: 65%;
+    }
+}
+@media only screen and (max-width:600px){
+    .pop_up {
+        width: 75%;
+    }
+}
